@@ -1,0 +1,26 @@
+
+# HIV/AIDS em países capitalistas e comunistas ---------------------------------------------------------------------------------------------
+# Atoria do script: Jeanne Franco ----------------------------------------------------------------------------------------------------------
+# Data: 07/10/22 ---------------------------------------------------------------------------------------------------------------------------
+# Referência: https://ourworldindata.org/hiv-aids ------------------------------------------------------------------------------------------
+
+# Sobre os dados ---------------------------------------------------------------------------------------------------------------------------
+
+### Uma infecção com HIV (human immunodeficiency virus) pode levar a AIDS (acquired immunodeficiency syndrome)
+### AIDS resulta em um gradual e persistente declínio e falha do sistema imunológico,
+### resultando em um aumentado risco de infecções e cancers que ameaçam a vida.
+
+### Na maioria dos casos, HIV é uma infecção transmitida sexualmente. Entretanto, o HIV
+### pode ser transmitido da mãe para o filho através da gravidez ou parto, ou através
+### da amamentação. Transmissão não sexual também pode ocorrer através do compartilhamento
+### dos equipamento de injeções como agulhas contaminadas.
+
+# Carregar pacotes -------------------------------------------------------------------------------------------------------------------------
+
+library(tidyverse)
+library(cols4all)
+library(hrbrthemes)
+
+
+
+

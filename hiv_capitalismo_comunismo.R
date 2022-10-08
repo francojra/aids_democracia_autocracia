@@ -1,6 +1,6 @@
 
 # HIV/AIDS em países capitalistas e comunistas ---------------------------------------------------------------------------------------------
-# Atoria do script: Jeanne Franco ----------------------------------------------------------------------------------------------------------
+# Autoria do script: Jeanne Franco ----------------------------------------------------------------------------------------------------------
 # Data: 07/10/22 ---------------------------------------------------------------------------------------------------------------------------
 # Referência: https://ourworldindata.org/hiv-aids ------------------------------------------------------------------------------------------
 
@@ -54,7 +54,7 @@ c4a("safe", 6)
 
 ggplot(aids1, aes(x = fct_reorder(Entity, media), 
                   y = media, fill = Entity)) +
-  geom_col() +
+  geom_col(width = 0.9) +
   geom_errorbar(aes(ymin = media - se, ymax = media + se),
                 size = 0.8, width = 0.2) +
   scale_fill_manual(values = c("#88CCEE", "#CC6677",

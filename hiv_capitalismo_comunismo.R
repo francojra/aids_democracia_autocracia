@@ -21,6 +21,33 @@ library(tidyverse)
 library(cols4all)
 library(hrbrthemes)
 
+# Carregar dados ---------------------------------------------------------------------------------------------------------------------------
 
+aids <- read.csv("share-deaths-aids.csv")
+view(aids)
+names(aids)
+
+# Manipular dados --------------------------------------------------------------------------------------------------------------------------
+
+aids <- aids %>%
+  select(-Code) %>%
+  rename(morte_hiv = Deaths...HIV.AIDS...Sex..Both...Age..All.Ages..Percent.) %>%
+  view()
+
+aids1 <- aids %>%
+  filter(Entity %in% c("United States", "Germany", "Japan",
+                       "China", "Cuba", "North Korea")) %>%
+  group_by(Entity) %>%
+  summarise(media = mean(morte_hiv),
+            sd = sd(morte_hiv), n = n(),
+            se = sd/sqrt(n)) %>%
+  view()
+
+aids2 <- aids %>%
+  filter(Entity %in% c("United States", "Germany", "Japan",
+                       "China", "Cuba", "North Korea")) %>%
+  view()
+
+# Gráficos ---------------------------------------------------------------------------------------------------------------------------------
 
 

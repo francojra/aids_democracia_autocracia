@@ -1,4 +1,4 @@
-# HIV/AIDS em países capitalistas e comunistas
+# HIV/AIDS em países democratas e autocratas
 
 ### Autoria do script: Jeanne Franco
 ### Data: 07/10/22
